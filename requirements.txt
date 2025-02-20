@@ -1,0 +1,9 @@
+h5py==3.11.0
+numpy==2.2.1
+pandas==2.2.3
+scikit_learn==1.4.0
+scikit_survival==0.23.1
+scipy==1.14.1
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+wandb==0.19.2
