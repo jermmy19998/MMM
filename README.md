@@ -1,17 +1,24 @@
 ### **MMM: A Lightweight Framework for Multi-modal Mutual Mixer in Cancer Survival Prediction**
 
-<p align="center">Anonymized Authors</p>
-<p align="center">email@anonymized.com</p>
+<p align="center"><i>Anonymized Authors<i></p>
+<p align="center"><i>email@anonymized.com<i></p>
 
 ![MMM Framework](framework.png)
 
-**Abstract:** Survival analysis is a critical task in prognostic treatment, often requiring the integration of Whole Slide Images (WSIs) and genomic data. This task presents several significant challenges, including substantial computational demands and the inherent heterogeneity between these two modalities. Existing approaches primarily rely on attention mechanisms, which typically incorporate multiple attention layers in the intermediate and final stages of the models. However, these methods often generate excessive redundant information, leading to inefficiencies and limiting their practical applicability in real-world clinical scenarios. To address these challenges, we propose the **M**ulti-modal **M**utual **M**ixer (**MMM**), a novel framework designed to optimize the integration and interaction of multi-modal data while ensuring practical efficiency. Within this framework, we introduce the **M**ulti-**i**nformation **T**ransmission (**MiT**) mechanism, which dynamically generates feature weights from global information of the modality, enabling effective cross-modal alignment without unnecessary complexity. To further enhance feature interaction between WSIs and genomic data, we incorporate the **D**ual **A**ffine **M**apper (**DAM**) block. This module utilizes dual affine transformations to extract modality-specific features, decomposing each modality into two complementary components (head and tail), and dynamically modulating one modality’s features with the parameters derived from the other. Comprehensive experimental evaluations demonstrate that our model achieves state-of-the-art (SOTA) performance overall, while requiring **12 times fewer parameters** compared to the previous SOTA. This efficiency is consistently observed across multiple datasets, including TCGA-BLCA, TCGA-UCEC, and TCGA-LUAD.
+**Abstract:** *Survival analysis is a critical task in prognostic treatment, often requiring the integration of Whole Slide Images (WSIs) and genomic data. This task presents several significant challenges, including substantial computational demands and the inherent heterogeneity between these two modalities. Existing approaches primarily rely on attention mechanisms, which typically incorporate multiple attention layers in the intermediate and final stages of the models. However, these methods often generate excessive redundant information, leading to inefficiencies and limiting their practical applicability in real-world clinical scenarios. To address these challenges, we propose the **M**ulti-modal **M**utual **M**ixer (**MMM**), a novel framework designed to optimize the integration and interaction of multi-modal data while ensuring practical efficiency. Within this framework, we introduce the **M**ulti-**i**nformation **T**ransmission (**MiT**) mechanism, which dynamically generates feature weights from global information of the modality, enabling effective cross-modal alignment without unnecessary complexity. To further enhance feature interaction between WSIs and genomic data, we incorporate the **D**ual **A**ffine **M**apper (**DAM**) block. This module utilizes dual affine transformations to extract modality-specific features, decomposing each modality into two complementary components (head and tail), and dynamically modulating one modality’s features with the parameters derived from the other. Comprehensive experimental evaluations demonstrate that our model achieves state-of-the-art (SOTA) performance overall, while requiring **12 times fewer parameters** compared to the previous SOTA. This efficiency is consistently observed across multiple datasets, including TCGA-BLCA, TCGA-UCEC, and TCGA-LUAD.*
 
 ### Hardware and Software. 
 MMM is implemented in PyTorch 2.1.2+cu118 with
 Python 3.10.15, and trained on an Ubuntu 22.04.4 LTS system with 4 NVIDIA
 RTX 4090 GPUs.
 
+### TCGA Dataset download guide
+Frist download the manifest for TCGA GDC Data Portal and download the manifest file.
+Run:
+```bash
+python ./clean_txt.py # You may modify some paths
+nohup bash ./download_tcga.sh > download.log 2>&1 & # You may modify some paths
+```
 
 ### Preprocessing
 Thanks to the excellent work done by [CLAM](https://github.com/mahmoodlab/CLAM/tree/master). In this step, we used codes of [CLAM](https://github.com/mahmoodlab/CLAM/tree/master). Please refer to their original repository on how to process your WSIs into features.
