@@ -15,7 +15,7 @@ Python 3.10.15, and trained on an Ubuntu 22.04.4 LTS system with 4 NVIDIA
 RTX 4090 GPUs.
 
 ### TCGA Dataset download guide
-Frist download the manifest for TCGA GDC Data Portal and download the manifest file.
+Frist download the manifest form TCGA GDC Data Portal.
 Run:
 ```bash
 python ./clean_txt.py # You may modify some paths
@@ -101,7 +101,7 @@ CUDA_VISIBLE_DEVICES=2 nohup python3 main.py \
 The command will run on different GPUs. You can modify the GPU number based on your available hardware. **If you don't want to upload data to wandb you can remove --wandb.**
 
 ### Issues
-Please report all issues to [GitHub](https://github.com/jermmy19998/MMM/issues). Or send [e-mail](email@anonymized.com) to me.
+Please report all issues to [GitHub](https://github.com/jermmy19998/MMM/issues), or feel free to send an [e-mail](email@anonymized.com) directly to me.
 
 ### Acknowledgement
 This repository is built upon [MoME](https://github.com/BearCleverProud/MoME), [CLAM](https://github.com/mahmoodlab/CLAM/tree/master), [MCAT](https://github.com/mahmoodlab/MCAT/tree/master)  and [MOTCat](https://github.com/Innse/MOTCat). We sincerely thank them for their outstanding contributions, which have significantly accelerated our progress!
