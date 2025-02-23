@@ -15,8 +15,7 @@ Python 3.10.15, and trained on an Ubuntu 22.04.4 LTS system with 4 NVIDIA
 RTX 4090 GPUs.
 
 ### TCGA Dataset download guide
-Frist download the manifest form TCGA GDC Data Portal.
-Run:
+Frist download the manifest form TCGA GDC Data Portal and run:
 ```bash
 python ./clean_txt.py # You may modify some paths
 nohup bash ./download_tcga.sh > download.log 2>&1 & # You may modify some paths
