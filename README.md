@@ -65,7 +65,7 @@ If you encounter issues while installing torch or scikit-survival, you can downl
 pip install xxx.whl
 ``` 
 
-### Training
+### Run experiments
 ```bash
 CUDA_VISIBLE_DEVICES=0 nohup python3 main.py \
     --data_root_dir ./TCGA_LUAD_pt \ 
