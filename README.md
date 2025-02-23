@@ -110,3 +110,6 @@ This repository is built upon [MoME](https://github.com/BearCleverProud/MoME), [
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 ```bash
 ```
+
+### LICENSE
+This project is licensed under the Creative Commons BY-NC (Attribution-NonCommercial) - see the [LICENSE.md](LICENSE.md) file for details.
