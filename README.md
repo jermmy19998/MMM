@@ -11,9 +11,7 @@
 
 
 ### Hardware and Software. 
-MMM is implemented in PyTorch 2.1.2+cu118 with
-Python 3.10.15, and trained on an Ubuntu 22.04.4 LTS system with 4 NVIDIA
-RTX 4090 GPUs.
+MMM model is implemented using PyTorch 2.1.2 with CUDA 11.8 and is trained with Python 3.10.15. The training process is conducted on an Ubuntu 22.04.4 LTS system, utilizing four NVIDIA RTX 4090 GPUs.
 
 ### TCGA Dataset download guide
 Frist download the manifest form TCGA GDC Data Portal and run:
