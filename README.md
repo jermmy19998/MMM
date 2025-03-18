@@ -6,9 +6,8 @@
 
 ![MMM Framework](framework.png)
 
-## Abstract
 
-Survival analysis is a critical task in prognostic treatment, often requiring the integration of Whole Slide Images (WSIs) and genomic data. This task presents several significant challenges, including substantial computational demands and the inherent heterogeneity between these two modalities. Existing approaches primarily rely on attention mechanisms, which typically incorporate multiple attention layers in the intermediate and final stages of the models. However, these methods often generate excessive redundant information, leading to inefficiencies and limiting their practical applicability in real-world clinical scenarios. 
+**Abstract**:Survival analysis is a critical task in prognostic treatment, often requiring the integration of Whole Slide Images (WSIs) and genomic data. This task presents several significant challenges, including substantial computational demands and the inherent heterogeneity between these two modalities. Existing approaches primarily rely on attention mechanisms, which typically incorporate multiple attention layers in the intermediate and final stages of the models. However, these methods often generate excessive redundant information, leading to inefficiencies and limiting their practical applicability in real-world clinical scenarios. 
 
 To address these challenges, we propose the **Multi-modal Mutual Mixer (MMM)**, a novel framework designed to optimize the integration and interaction of multi-modal data while ensuring practical efficiency. Within this framework, we introduce the **Multi-information Transmission (MiT)** mechanism, which dynamically generates feature weights from global information of the modality, enabling effective cross-modal alignment without unnecessary complexity. 
 
