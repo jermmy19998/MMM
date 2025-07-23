@@ -4,7 +4,7 @@
 <p align="center"><i>email@anonymized.com</i></p>
 
 
-![MMM Framework](framework_moe_w.png)
+![MMM Framework](mmm_framework.png)
 
 
 **Abstract**:Survival analysis is a critical task in prognostic treatment, often requiring the integration of Whole Slide Images (WSIs) and genomic data. This task presents several significant challenges, including substantial computational demands and the inherent heterogeneity between these two modalities. Existing approaches primarily rely on attention mechanisms with multiple stacked layers, which tend to introduce excessive redundant computations and large parameter counts, limiting their practicality in real-world clinical scenarios. To address these challenges, we propose the Multi-experts Mutual Mixer (MMM), a lightweight yet powerful framework designed to efficiently integrate and interact with multi-modal data. Within this framework, we introduce the Gated-Multi Experts (GME) mechanism, which dynamically assigns expert weights based on modality-specific features and employs a compact softmax router to select expert pairs. Inspired by multidisciplinary consultations in clinical practice, this design simulates iterative meetings between gene and image experts, enabling effective feature alignment through multi-round Gaussian position-biased interactions while avoiding unnecessary complexity. To further improve efficiency, we incorporate the Dual Affine Mapper (DAM) module, which leverages dual affine transformations to extract complementary modality-specific components and modulate one modality’s features with parameters derived from the other. Extensive experiments demonstrate that our model not only achieves state-of-the-art (SOTA) performance on multiple survival prediction benchmarks but also maintains a significantly reduced parameter count and computational footprint. This efficiency is consistently observed across the TCGA-BLCA, TCGA-UCEC, and TCGA-LUAD datasets, highlighting its potential for practical deployment in clinical settings.
@@ -104,6 +104,7 @@ Please report all issues to [GitHub](https://github.com/jermmy19998/MMM/issues),
 ### Acknowledgement
 This repository is built upon [MoME](https://github.com/BearCleverProud/MoME), [CLAM](https://github.com/mahmoodlab/CLAM/tree/master), [MCAT](https://github.com/mahmoodlab/MCAT/tree/master)  and [MOTCAT](https://github.com/Innse/MOTCat). We sincerely thank them for their outstanding contributions, which have significantly accelerated our progress!
 
+### Code Coming soon
 ### Reference
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 ```bash
