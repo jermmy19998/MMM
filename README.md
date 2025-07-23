@@ -1,4 +1,4 @@
-### **MMM: A Lightweight Framework for Multi-modal Mutual Mixer in Cancer Survival Prediction**
+### **MMM: A Lightweight Framework for Multi-experts Mutual Mixer in Cancer Survival Prediction**
 
 <p align="center"><i>Anonymized Authors</i></p>
 <p align="center"><i>email@anonymized.com</i></p>
